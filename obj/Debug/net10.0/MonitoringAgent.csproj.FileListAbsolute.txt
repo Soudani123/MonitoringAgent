@@ -24,3 +24,4 @@ C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\refint\MonitoringAgent.dll
 C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.pdb
 C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.genruntimeconfig.cache
 C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\ref\MonitoringAgent.dll
+C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.sourcelink.json
