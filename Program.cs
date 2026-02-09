@@ -63,8 +63,10 @@ namespace MonitoringAgent
                 }
             }
 
-            // Logs Windows (Application + System) depuis le 01/01/2026
+            // Date de départ unique
             DateTime startDate = new DateTime(2026, 1, 1);
+
+            // Logs Application + System
             List<object> logs = new List<object>();
 
             try
@@ -74,18 +76,10 @@ namespace MonitoringAgent
                 {
                     if ((entry.EntryType == EventLogEntryType.Error || entry.EntryType == EventLogEntryType.Warning)
                         && entry.TimeGenerated >= startDate
-                        && logs.Count < 50) // limiter à 50 derniers
+                        && logs.Count < 50)
                     {
                         string niveau = entry.EntryType == EventLogEntryType.Error ? "Critique" : "Moyen";
-
-                        logs.Add(new
-                        {
-                            time = entry.TimeGenerated,
-                            type = entry.EntryType.ToString(),
-                            source = entry.Source,
-                            message = entry.Message,
-                            niveau
-                        });
+                        logs.Add(new { time = entry.TimeGenerated, type = entry.EntryType.ToString(), source = entry.Source, message = entry.Message, niveau });
                     }
                 }
             }
@@ -98,22 +92,41 @@ namespace MonitoringAgent
                 {
                     if ((entry.EntryType == EventLogEntryType.Error || entry.EntryType == EventLogEntryType.Warning)
                         && entry.TimeGenerated >= startDate
-                        && logs.Count < 100) // limiter à 50 + 50
+                        && logs.Count < 100)
                     {
                         string niveau = entry.EntryType == EventLogEntryType.Error ? "Critique" : "Moyen";
+                        logs.Add(new { time = entry.TimeGenerated, type = entry.EntryType.ToString(), source = entry.Source, message = entry.Message, niveau });
+                    }
+                }
+            }
+            catch { }
 
-                        logs.Add(new
+            // Logs Sécurité séparés
+            List<object> securityLogs = new List<object>();
+            try
+            {
+                EventLog secLog = new EventLog("Security");
+                foreach (EventLogEntry entry in secLog.Entries)
+                {
+                    if ((entry.EntryType == EventLogEntryType.FailureAudit || entry.EntryType == EventLogEntryType.SuccessAudit)
+                        && entry.TimeGenerated >= startDate
+                        && securityLogs.Count < 100)
+                    {
+                        securityLogs.Add(new
                         {
                             time = entry.TimeGenerated,
                             type = entry.EntryType.ToString(),
                             source = entry.Source,
                             message = entry.Message,
-                            niveau
+                            niveau = "Sécurité"
                         });
                     }
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                Console.WriteLine("⚠️ Impossible de lire les logs Sécurité : " + ex.Message);
+            }
 
             // Préparation des données JSON enrichies
             var jsonData = new
@@ -126,7 +139,8 @@ namespace MonitoringAgent
                 ramProcessMB,
                 disks,
                 applications = apps,
-                logs
+                logs,          // Application + System
+                securityLogs   // Sécurité séparés
             };
 
             string jsonString = JsonSerializer.Serialize(jsonData);
