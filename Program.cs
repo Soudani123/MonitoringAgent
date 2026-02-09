@@ -14,7 +14,7 @@ namespace MonitoringAgent
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine("=== Agent de Monitoring Windows (MVP) ===");
+            Console.WriteLine("=== Agent de Monitoring Windows  ===");
 
             // Audit système
             string machine = Environment.MachineName;
