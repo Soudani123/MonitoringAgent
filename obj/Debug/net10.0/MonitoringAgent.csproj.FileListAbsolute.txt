@@ -24,6 +24,7 @@ C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\refint\MonitoringAgent.dll
 C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.pdb
 C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.genruntimeconfig.cache
 C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\ref\MonitoringAgent.dll
+<<<<<<< HEAD
 C:\Users\User\Desktop\Monitoring-agent\MonitoringAgent\bin\Debug\net10.0\MonitoringAgent.exe
 C:\Users\User\Desktop\Monitoring-agent\MonitoringAgent\bin\Debug\net10.0\MonitoringAgent.deps.json
 C:\Users\User\Desktop\Monitoring-agent\MonitoringAgent\bin\Debug\net10.0\MonitoringAgent.runtimeconfig.json
@@ -51,3 +52,6 @@ C:\Users\User\Desktop\Monitoring-agent\MonitoringAgent\obj\Debug\net10.0\refint\
 C:\Users\User\Desktop\Monitoring-agent\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.pdb
 C:\Users\User\Desktop\Monitoring-agent\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.genruntimeconfig.cache
 C:\Users\User\Desktop\Monitoring-agent\MonitoringAgent\obj\Debug\net10.0\ref\MonitoringAgent.dll
+=======
+C:\Users\ssoudani\MonitoringAgent\obj\Debug\net10.0\MonitoringAgent.sourcelink.json
+>>>>>>> a457980ce7cbe8a100a8db98622b076a9c2ad1cc
