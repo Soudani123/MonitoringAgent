@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "u/tdKUpFlno=",
+  "dgSpecHash": "GODj4uk/Xno=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ssoudani\\MonitoringAgent\\MonitoringAgent.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Monitoring-agent\\MonitoringAgent\\MonitoringAgent.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ssoudani\\.nuget\\packages\\system.codedom\\10.0.2\\system.codedom.10.0.2.nupkg.sha512",
-    "C:\\Users\\ssoudani\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.2\\system.configuration.configurationmanager.10.0.2.nupkg.sha512",
-    "C:\\Users\\ssoudani\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.2\\system.diagnostics.eventlog.10.0.2.nupkg.sha512",
-    "C:\\Users\\ssoudani\\.nuget\\packages\\system.diagnostics.performancecounter\\10.0.2\\system.diagnostics.performancecounter.10.0.2.nupkg.sha512",
-    "C:\\Users\\ssoudani\\.nuget\\packages\\system.management\\10.0.2\\system.management.10.0.2.nupkg.sha512",
-    "C:\\Users\\ssoudani\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.2\\system.security.cryptography.protecteddata.10.0.2.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\system.codedom\\10.0.2\\system.codedom.10.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.2\\system.configuration.configurationmanager.10.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.2\\system.diagnostics.eventlog.10.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.diagnostics.performancecounter\\10.0.2\\system.diagnostics.performancecounter.10.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.management\\10.0.2\\system.management.10.0.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.2\\system.security.cryptography.protecteddata.10.0.2.nupkg.sha512"
   ],
   "logs": []
 }

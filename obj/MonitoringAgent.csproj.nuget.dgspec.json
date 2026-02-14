@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ssoudani\\MonitoringAgent\\MonitoringAgent.csproj": {}
+    "C:\\Users\\User\\Desktop\\Monitoring-agent\\MonitoringAgent\\MonitoringAgent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ssoudani\\MonitoringAgent\\MonitoringAgent.csproj": {
+    "C:\\Users\\User\\Desktop\\Monitoring-agent\\MonitoringAgent\\MonitoringAgent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssoudani\\MonitoringAgent\\MonitoringAgent.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Monitoring-agent\\MonitoringAgent\\MonitoringAgent.csproj",
         "projectName": "MonitoringAgent",
-        "projectPath": "C:\\Users\\ssoudani\\MonitoringAgent\\MonitoringAgent.csproj",
-        "packagesPath": "C:\\Users\\ssoudani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssoudani\\MonitoringAgent\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Monitoring-agent\\MonitoringAgent\\MonitoringAgent.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Monitoring-agent\\MonitoringAgent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ssoudani\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
