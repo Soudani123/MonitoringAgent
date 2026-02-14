@@ -101,7 +101,7 @@ namespace MonitoringAgent
             }
             catch { }
 
-            // Logs Sécurité séparés
+            // Logs Sécurité
             List<object> securityLogs = new List<object>();
             try
             {
