@@ -112,14 +112,16 @@ namespace MonitoringAgent
                         && entry.TimeGenerated >= startDate
                         && securityLogs.Count < 100)
                     {
-                        securityLogs.Add(new
-                        {
-                            time = entry.TimeGenerated,
-                            type = entry.EntryType.ToString(),
-                            source = entry.Source,
-                            message = entry.Message,
-                            niveau = "Sécurité"
-                        });
+                        string niveau = entry.EntryType == EventLogEntryType.FailureAudit ? "Critique" : "Moyen";
+
+securityLogs.Add(new
+{
+    time = entry.TimeGenerated,
+    type = entry.EntryType.ToString(),
+    source = entry.Source,
+    message = entry.Message,
+    niveau
+});
                     }
                 }
             }
@@ -149,7 +151,7 @@ namespace MonitoringAgent
             var client = new HttpClient();
             var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-            await client.PostAsync("https://webhook.site/3268c86a-3936-4bbc-a9a0-3b4fd9eb8525", content);
+            await client.PostAsync("https://webhook.site/14aaa034-40b1-42dd-b6d4-4a0fadff1544", content);
 
             Console.WriteLine("\n✅ Données enrichies envoyées vers Webhook.site !");
         }
